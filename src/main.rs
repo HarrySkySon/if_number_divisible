@@ -18,6 +18,9 @@ fn main() {
     let user_input: u64 = user_input.trim().parse().expect("Please enter a valid number");
 
 //and finds all the numbers in the range from 0 to 1000000000 that can be divided by the user input without a remainder
+    
+    println!("There are all numbers in the range from 0 to 1000000000 that can be divided by your number without a remainder:");
+    
     for i in 1..=1000000000 {
         if user_input % i  == 0 {
             println!("{}", i);
